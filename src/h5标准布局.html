@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标准布局</title>
+</head>
+<body>
+<header
+    style="width:100%;background-color: deepskyblue;height: 100px;text-align: center;line-height: 100px;vertical-align: middle">
+    <nav style="color: white;font-size: 40px;">分付君</nav>
+</header>
+
+<div>
+    <article style="width: 75%;height: 400px;background-color: #222222;float: left">
+        <section style="background-color: #222222">
+        </section>
+    </article>
+    <aside style="width: 25%;height: 400px;background-color: red;float: left">
+    </aside>
+</div>
+
+
+<footer style="padding: 30px;display: flex;justify-content: center;align-content: center;background-color: grey">
+    我有话说
+</footer>
+
+
+
+position:absolte  断开了数据流；成为了块
+<div style="position: relative">
+    <div
+        style="position: absolute ;right: 0px; height: 100px;width: 50%;background-color: yellow;border: 1px solid red"></div>
+    <div
+        style="position: absolute ;height: 100px;width: 50%;background-color: green;border: 1px solid saddlebrown "></div>
+</div>
+flex 并没有断开留
+<div style="margin-top: 100px;display: flex">
+    <div
+        style="flex: 1;right: 0px; height: 100px;background-color: yellow;border: 1px solid red"></div>
+    <div
+        style="flex: 2;height: 100px;background-color: green;border: 1px solid saddlebrown "></div>
+</div>
+
+
+<div style="display: flex;flex-direction: row-reverse">
+    <div
+        style="flex: 1;right: 0px; height: 100px;background-color: yellow;border: 1px solid red"></div>
+    <div
+        style="flex: 2;height: 100px;background-color: green;border: 1px solid saddlebrown "></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="box box-22" style="flex-direction: column-reverse">
+    <div class="box-item">1</div>
+    <div class="box-item order2">2</div>
+    <div class="box-item order" >3
+    </div>
+    <div class="box-item order">4
+    </div>
+</div>
+
+
+<div style="display: flex;flex-direction: row">
+    <div style="background-color: red;height: 50px;flex-shrink: 0">12</div>
+    <div style="background-color: green;height: 100px;text-align: center">12</div>
+    <div style="background-color: blue;height: 70px">12</div>
+</div>
+
+
+<div style="display: flex;height: 200px;align-items: stretch;justify-content: space-between;background-color: #797979">
+    <label style="height: 100px;background-color: e">bbbbbbbbbbbbbbbb</label>
+    <label>ccccccccccccccccccccccccccccccccccccccc</label>
+    <label>ddddddddddd</label>
+</div>
+
+
+<div style="display: flex;flex-flow: wrap">
+    <label>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</label>
+    <label>bbbbbbbbbbbbbbbb</label>
+    <label>ccccccccccccccccccccccccccccccccccccccc</label>
+    <label>ddddddddddd</label>
+    <label>eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</label>
+
+
+</div>
+
+
+<div style="display: flex;background-color: beige;flex-direction:column-reverse;height: 300px">
+    <div style="background-color: red">12</div>
+    <div style="background-color: green">12</div>
+    <div style="background-color: blue">12</div>
+</div>
+
+</body>
+
+<style type="text/css">
+    .box {
+        background-color: white;
+        margin: 0 0 55px;
+        display: flex;
+
+    }
+
+    .box-22 .order {
+        order: -1;
+        flex-direction: column;
+    }
+
+    .box-item {
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        vertical-align: middle;
+        margin: 5px;
+        background-color: #ffd200;
+        font-size: 100px;
+        color: white;
+        text-align: center;
+    }
+
+    .box-22 .order2{
+        order: -2;
+    }
+
+    .box-22 .order {
+        order: -1;
+    }
+</style>
+</html>
